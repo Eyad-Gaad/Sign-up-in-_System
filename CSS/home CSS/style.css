@@ -1,0 +1,31 @@
+:root{
+    --Titillium : "Titillium Web", sans-serif;
+    --main-color: #24353F; 
+    --sec-color: #17A2B8; 
+}
+.Titillium{
+    font-family: var(--Titillium);
+}
+.main-color{
+    color: var(--main-color);
+}
+.sec-color{
+    color: var(--sec-color);
+}
+body{
+    background-color: var(--main-color);
+}
+nav{
+    box-shadow: 0px 2px 100px 2px black;
+}
+nav img[src="Images/home-page.png"]{
+    width: 3.5rem;
+}
+.navbar-toggler-icon{
+    background-image: url(../../Images/Hamburger_icon_white.svg.png)!important;
+    background-size: cover;
+    background-position: center;
+}
+.item{
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.505);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="icon" href="Images/Lock Icon.webp">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+    <script src="Java Script/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="container d-flex justify-content-center">
+        <div class="log rounded-5 mt-5 p-5 col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7">
+            <form>
+                <h1 class="text-center Titillium sec-color mb-1">Smart Login System</h1>
+                <input id="name" name="name" type="text" class="form-control w-100 py-2 px-3 mb-1 mt-3 bg-transparent border border-1 border-white rounded-2 text-white" placeholder="Enter Your Name">
+                <span class="ms-2 text-danger d-none">"Enter 3-15 letters, no spaces at edges."</span>
+                <input id="email" name="text" type="email" class="form-control w-100 py-2 px-3 mb-1 mt-3 bg-transparent border border-1 border-white rounded-2 text-white" placeholder="Enter Your Email">
+                <span class="ms-2 text-danger d-none">"Please enter a valid email (e.g., user@example.com)."</span>
+                <span class="ms-2 text-danger d-none">"This email is arledy exsist"</span>
+                <div class="position-relative">
+                    <input id="password" name="password" type="password" class="form-control w-100 py-2 px-3 mb-1 mt-3 bg-transparent border border-1 border-white rounded-2 text-white" placeholder="Enter Your Password">
+                    <i id="noeye" class="position-absolute text-white fa-solid fa-eye-slash"></i>
+                    <i id="eye" class="position-absolute d-none text-white fa-solid fa-eye"></i>
+                </div>
+                <span class="ms-2 text-danger d-none">"Your password must be at least 8 characters long, including uppercase, lowercase, a number, and a special character."</span>
+                <p class="Success text-center mt-4 d-none">Success</p>
+                <p class="Exist text-center text-danger mt-4 d-none">Invalid Login</p>
+                <button id="sign-up" type="button" class="btn btn-outline-info mt-4 text-center d-block w-50 mx-auto Titillium rounded-2">Sign Up</button>
+                <button id="log-in" type="button" class="btn btn-outline-info mt-4 text-center d-block w-50 mx-auto Titillium rounded-2 d-none">LogIn</button>
+            </form>
+            <p class="mt-4 text-center text-white Titillium">You have an account? <a class="a-log text-decoration-none text-white">LogIn</a></p>
+            <p class="mt-4 text-center text-white Titillium d-none">Don’t have an account? <a class="a-log text-decoration-none text-white">Sign Up</a></p>
+        </div>
+    </div>
+    <script src="Java Script/index.js"></script>
+</body>
+</html>
